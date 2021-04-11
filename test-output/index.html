@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Moni\AppData\Local\Temp\testng-eclipse--2003389465\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SmallCaseTest.APITest" hash-for-method="APITest">APITest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">SmallCaseTest.APITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="APITest">
+                  </a> <!-- APITest -->
+                  <span class="method-name">APITest</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/0&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/0/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/1&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/1/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/2&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/2/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/3&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/3/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/4&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/4/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/5&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/5/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/6&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/6/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance failed to match at least one required schema among 1
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items&quot;}
+    instance: {&quot;pointer&quot;:&quot;/books/7&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;anyOf&quot;
+    nrSchemas: 1
+    reports: {&quot;/properties/books/items/anyOf/0&quot;:[{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id]&quot;,&quot;ignored&quot;:[&quot;$id&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/author&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/description&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/isbn&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;error&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/pages&quot;},&quot;instance&quot;:{&quot;pointer&quot;:&quot;/books/7/pages&quot;},&quot;domain&quot;:&quot;validation&quot;,&quot;keyword&quot;:&quot;type&quot;,&quot;message&quot;:&quot;instance type (integer) does not match any allowed primitive type (allowed: [\&quot;string\&quot;])&quot;,&quot;found&quot;:&quot;integer&quot;,&quot;expected&quot;:[&quot;string&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publish_date&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/publisher&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/subTitle&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/title&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]},{&quot;level&quot;:&quot;warning&quot;,&quot;schema&quot;:{&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/books/items/anyOf/0/properties/website&quot;},&quot;domain&quot;:&quot;syntax&quot;,&quot;message&quot;:&quot;the following keywords are unknown and will be ignored: [$id, examples]&quot;,&quot;ignored&quot;:[&quot;$id&quot;,&quot;examples&quot;]}]}
+
+  Actual: {&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&apos;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&apos;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&apos;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&apos;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&apos;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&apos;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&apos;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&apos;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&apos;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&apos;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at APIAutomation.APIAutomation.getResponseBody(APIAutomation.java:25)
+	at SmallCaseTest.APITest.APITest(APITest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Moni\AppData\Local\Temp\testng-eclipse--2003389465\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SmallCaseTest.APITest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'APITest')
+data.setCell(0, 2, 'SmallCaseTest.APITest')
+data.setCell(0, 3, 2824);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SmallCaseTest.APITest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">APITest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
